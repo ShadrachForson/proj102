@@ -1,0 +1,37 @@
+#qliqulato{
+    color:rgb(247, 250, 77);  
+}
+span{background-color : rgb(189, 192, 41);
+     color: blueviolet;
+     font-size: 14px ;
+}
+
+body{background-color: rgba(196, 145, 255, 0.384);
+    position: relative;
+text-align: center;}
+
+input[type=number]{
+    width:26%;
+    border:5px solid #aaa;
+    border-radius:2px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.1s;
+    height: 10px;
+  }
+  
+  input[type=number]:focus{
+    border-color: rgba(196, 145, 255, 0.384);
+    box-shadow:5px 5px 5px 5px #aaa;
+  }
+
+  #addition,#subtraction,#division,#multiplication,#modulo,#exponent{
+    background-color: #aaa; 
+    border: none; 
+    border-radius: 15px; 
+    color: rgb(233, 248, 17); 
+    padding: 5px 10px;
+    font-size: 50%;
+  }

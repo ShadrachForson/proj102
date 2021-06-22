@@ -1,0 +1,56 @@
+<!Doctype html>
+<html xml:lang>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width", initial-scale=1.0/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+        <title> QliQulato&trade; </title>
+        
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <p ><h3 style="font:caption; color:rgb(141, 141, 141)"> <strong> <h6 id="qliqulato"> QliQulato&trade; </h6></strong></h3></p>
+
+        <div>
+        <input type="number" onclick="playSound()" id="term_1"  placeholder ="Input first term">
+        <input type="number" onclick="playSound()" id="term_2"  placeholder ="Input second term">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span id="remark" ></span>
+        <br>
+        <!-- span showing remark on computation on inputs from Textbox 1 and Textbox 2 -->
+        <label> <strong> <em>answer is :</em> </strong></label>
+        <!-- span showing result of computation on inputs from Textbox 1 and Textbox 2 -->
+        [ <span id="result" ></span> ]
+        <br><br>
+       <!-- click sound -->
+       <audio id="audio" src="soundfx/mixkit-fast-double-click-on-mouse-275.wav" autoplay="false" ></audio> 
+       <!--button group for operands--> 
+       <div class="container col-sm-12">
+        <input type="button" onclick="add()"      onclick="playSound()" id="addition"       value="+ Add">
+        <input type="button" onclick="subtract()" onclick="playSound()" id="subtraction"    value="- Subtract">
+        <input type="button" onclick="divide()"   onclick="playSound()" id="division"       value=" / Divide">
+        <br>
+        <br>
+        <input type="button" onclick="multiply()" onclick="playSound()" id="multiplication" value="* Multiply">
+        <input type="button" onclick="modulo()"   onclick="playSound()" id="modulo" value="% Modulo">
+        <input type="button" onclick="exponent()" onclick="playSound()" id="exponent" value=" ^ Exponent">
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>  
+        <footer style="font:caption; color:rgb(170, 170, 170)" id="footer" onload="showDate()">   <strong>Qliq Integrations</strong> <strong> &copy; </strong> <script>document.write(new Date().getFullYear())</script>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+        
+</html>
